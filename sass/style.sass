@@ -42,12 +42,12 @@ h1, h2, h3
   +text-shadow(1px 1px 0 darken($bg-color, 20))
 
 h3
-  margin: 0 0 40px
+  margin: 0 0 20px
   font-weight: normal
   line-height: 1.5em
   font-size: 14px
   color: darken($bg-color, 20)
-  +text-shadow(1px 1px 1px lighten($bg-color, 5%))
+  +text-shadow(1px 1px 1px rgba($bg-color + 60, .4))
   &:last-child
     margin-bottom: 0
 
@@ -62,9 +62,6 @@ a, a:visited
   color: $txt-color
   &:hover
     color: $txt-color - 20
-
-.vert-align
-  +clearfix
 
 footer
   position: fixed
