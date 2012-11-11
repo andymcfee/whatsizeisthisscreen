@@ -1,0 +1,75 @@
+@import compass
+
+$bg-color:  #A92B8C
+$txt-color: darken($bg-color, 20%)
+
+html
+  height: 100%
+body
+  height: 100%
+  -webkit-backface-visibility: hidden
+  -webkit-font-smoothing: antialiased
+  -webkit-text-stroke: 0
+  color: $txt-color
+  margin: 0
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-color: rgb(169,43,140) // Old browsers
+  +filter-gradient($bg-color, #72138e, horizontal) // IE6-8 fallback on horizontal gradient
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true
+  +background-image(linear-gradient(left top,  rgba(169,43,140,1) 0%,rgba(114,19,142,1) 100%))
+
+
+.box
+  +border-radius(5px)
+  +box-shadow(0 0 15px rgba(darken($bg-color, 20), .3) inset)
+  +box-sizing(border-box)
+  +background(linear-gradient(rgba(255,255,255, .1), rgba(255,255,255, .2)) transparent)
+  border: 1px solid rgba(lighten($bg-color, 20%), .2)
+  width: 80%
+  color: darken($bg-color, 10%)
+  font-size: 18px
+  max-width: 160px
+  margin: 0 auto
+  padding: 10px 5px
+  text-align: center
+
+h1, h2, h3
+  text-align: center
+  font-weight: 300
+  +text-shadow(1px 1px 0 darken($bg-color, 20))
+
+h3
+  margin: 0 0 40px
+  font-weight: normal
+  line-height: 1.5em
+  font-size: 14px
+  color: darken($bg-color, 20)
+  +text-shadow(1px 1px 1px lighten($bg-color, 5%))
+  &:last-child
+    margin-bottom: 0
+
+h1
+  font-weight: bold
+  font-size: 24px
+  color: lighten($bg-color, 40%)
+  display: inline
+
+a, a:visited
+  text-decoration: none
+  color: $txt-color
+  &:hover
+    color: $txt-color - 20
+
+.vert-align
+  +clearfix
+
+footer
+  position: fixed
+  bottom: 0
+  right: 0
+  color: darken($bg-color, 20%)
+  padding: 10px
+  font-size: 11px
