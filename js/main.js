@@ -4,6 +4,8 @@ var update = function(){
 
   $("#window-width").text($(document).width());
   $("#window-height").text($(document).height());
+
+  $("#pixel-ratio").text(window.devicePixelRatio);
 }
 
 var vert_align = function (){

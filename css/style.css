@@ -64,12 +64,12 @@ h1, h2, h3 {
 
 /* line 44, ../sass/style.sass */
 h3 {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
   font-weight: normal;
   line-height: 1.5em;
   font-size: 14px;
   color: #581649;
-  text-shadow: 1px 1px 1px #bd309d;
+  text-shadow: 1px 1px 1px rgba(229, 103, 200, 0.4);
 }
 /* line 51, ../sass/style.sass */
 h3:last-child {
@@ -95,12 +95,6 @@ a:hover, a:visited:hover {
 }
 
 /* line 66, ../sass/style.sass */
-.vert-align {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 69, ../sass/style.sass */
 footer {
   position: fixed;
   bottom: 0;
